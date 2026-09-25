@@ -74,7 +74,7 @@ jobs:
     needs: docker-build-push
     env:
       NAMESPACE: i27helpdesk-${{ inputs.environment || 'dev'}}
-      SECRET_NAME: i27-commment-${{ inputs.environment || 'dev' }}
+      SECRET_NAME: i27-comment-${{ inputs.environment || 'dev' }}
     environment: 
       name: ${{ inputs.environment || 'dev'}}
     permissions: 
